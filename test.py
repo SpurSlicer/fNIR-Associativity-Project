@@ -13,7 +13,7 @@ mouse = event.Mouse()
 
 # Other vars
 screen_number = 0
-cpt = sum([len(files) for r, d, files in os.walk("data")]) + 1
+cpt = sum([len(files) for r, d, files in os.walk("data")])
 filename = 'person' + str(cpt) +  '.txt'
 file = os.path.join('data', filename)
 fp = open(file, 'w')
