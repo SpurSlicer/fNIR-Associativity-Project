@@ -787,8 +787,8 @@ while True:
                 borderColor='darkmagenta', anchor='center', alignment='center')
             buttonMsg3.draw()
         else:
-            screen_number += 1
-            #PUSH 1 HERE
+            screen_number += 1 #PUSH 1
+            outlet.push_sample(x=[1])
             timer.reset()
             timer.addTime(60)
     elif (screen_number == 3): #NM Char review screen
@@ -815,7 +815,7 @@ while True:
             buttonMsg4.draw()
         else:
             screen_number += 1
-            #PUSH 2 HERE
+            outlet.push_sample(x=[2]) #PUSH 2
             timer.reset()
             timer.addTime(60)
     elif (screen_number == 5): #NM Char exam screen
@@ -845,7 +845,7 @@ while True:
             buttonMsg6.draw()
         else:
             screen_number += 1
-            #PUSH 3 HERE
+            outlet.push_sample(x=[3]) #PUSH 3
             timer.reset()
             timer.addTime(60)
     elif (screen_number == 7): #M Char review screen
@@ -872,7 +872,7 @@ while True:
             buttonMsg4.draw()
         else:
             screen_number += 1
-            #PUSH 4 HERE
+            outlet.push_sample(x=[4]) #PUSH 4
             timer.reset()
             timer.addTime(60)
     elif (screen_number == 9): #M Char exam screen
