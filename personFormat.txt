@@ -1,5 +1,6 @@
 Name
 Age
+
 ---Non Mnemonic Answers---
 1.
 2.
@@ -13,9 +14,10 @@ Age
 10.
 11.
 12.
-NM test score
-Read M characters time
-Tested on M characters time
+--------------------------
+Score: x
+
+---Mnemonic Answers---
 1.
 2.
 3.
@@ -28,4 +30,5 @@ Tested on M characters time
 10.
 11.
 12.
-M test score
+--------------------------
+Score: x
