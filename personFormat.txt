@@ -1,7 +1,6 @@
 Name
-Other info
-Read NM characters time
-Tested on NM characters time
+Age
+---Non Mnemonic Answers---
 1.
 2.
 3.

@@ -354,6 +354,7 @@ def renderics():
     tb11.draw()
     tb12.draw()
 def grade():
+    fp.write("\n---Non Mnemonic Answers---\n")
     fp.write(tb1.text + "\n")
     fp.write(tb2.text + "\n")
     fp.write(tb3.text + "\n")
@@ -366,6 +367,7 @@ def grade():
     fp.write(tb10.text + "\n")
     fp.write(tb11.text + "\n")
     fp.write(tb12.text + "\n")
+    fp.write("--------------------------\n")
     score = 0
     if (tb1.text.lower().__contains__("drink")):
         score += 1
@@ -391,7 +393,7 @@ def grade():
         score += 1
     if (tb12.text.lower().__contains__("river")):
         score += 1
-    fp.write(str((score/12)*100) + "\n")
+    fp.write("Score: " + str((score/12)*100) + "\n")
 ###SEQUENCE 5 OBJS###
 msg6 = visual.TextBox2(win,
     text="Now you will be given 12 Chinese characters with mnemonic devices, no paper, and no time limit--though you will be timed. When you click continue, you will be brought to a screen to study and learn the characters. When you click next, you will be examined on them. Good luck!",
@@ -679,6 +681,7 @@ def mrenderics():
     mtb11.draw()
     mtb12.draw()
 def mgrade():
+    fp.write("\n---Mnemonic Answers---\n")
     fp.write(mtb1.text + "\n")
     fp.write(mtb2.text + "\n")
     fp.write(mtb3.text + "\n")
@@ -691,6 +694,7 @@ def mgrade():
     fp.write(mtb10.text + "\n")
     fp.write(mtb11.text + "\n")
     fp.write(mtb12.text + "\n")
+    fp.write("--------------------------\n")
     score = 0
     if (mtb1.text.lower().__contains__("fish")):
         score += 1
@@ -716,7 +720,7 @@ def mgrade():
         score += 1
     if (mtb12.text.lower().__contains__("sing")):
         score += 1
-    fp.write(str((score/12)*100) + "\n")
+    fp.write("Score: " + str((score/12)*100) + "\n")
 ###SEQUENCE 0 OBJS###
 msg8 = visual.TextBox2(win,
     text="And that's it! Thank you so much for participating!",
