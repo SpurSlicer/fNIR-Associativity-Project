@@ -38,13 +38,13 @@ s11 = visual.TextBox2(win, text="", font="Open Sans", letterHeight=20, pos=(0, -
 s12 = visual.TextBox2(win, text="", font="Open Sans", letterHeight=20, pos=(0, -250), size=(50,50), alignment='center', color='black', fillColor='white')
 ###SEQUENCE 0 OBJS###
 msg1 = visual.TextBox2(win,
-    text="Hello! Thank you for helping participate in this study! By continuig, you agree to an arbitrary TOS.",
+    text="Hello! Thank you for helping participate in this study! By clicking continue, you agree to disclose all information entered for use in this study. There will be no revealing information in the publication; your name will only be used for organizational purposes and your age as a data piece. Your scores from the experiment will also be used as data. Please let the researcher know now if you do not agree. Click continue to agree.",
     font="Open Sans", letterHeight=30,
     pos=(0, 100), size=(1000,800), alignment='center')
 buttonMsg1 = visual.TextBox2(win,
     text="Continue & Agree",
     font="Open Sans", letterHeight=20,
-    pos=(0,0), size=(200,50), lineSpacing=1, fillColor='blue',
+    pos=(0,-100), size=(200,50), lineSpacing=1, fillColor='blue',
     borderColor='darkmagenta', anchor='center', alignment='center')
     
 ##SEQUENCE 1 OBJS###
@@ -73,7 +73,7 @@ buttonMsg2 = visual.TextBox2(win,
     borderColor='darkmagenta', anchor='center', alignment='center')
 ###SEQUENCE 2 OBJS###
 msg4 = visual.TextBox2(win,
-    text="Now you will be given 12 Chinese characters with no paper and a 1min time limit for memorization. When you click continue, you will be brought to a screen to study and learn the characters and the timer will begin. You will then be brought to a 30-second waiting screen followed by a 1min examanation. Good luck!",
+    text="Now you will have 1 minute to memorize the English meaning of 12 Chinese characters followed by 30 seconds of rest and a 1 minute exam prompting you to right the English meaning of each Chinese character.",
     font="Open Sans", letterHeight=30,
     pos=(0, 200), size=(1000,800), alignment='center')
 ###SEQUENCE 3 OBJS###
@@ -106,7 +106,7 @@ def renderNMImages():
 
 ###SEQUENCE 4 OBJS###
 msg5 = visual.TextBox2(win,
-    text="Please enter the English meaning of each character!",
+    text="Please enter the English meaning of each character:",
     font="Open Sans", letterHeight=30,
     pos=(0, 350), size=(1000,200), alignment='center')
 ic1 = visual.TextBox2(win,
@@ -396,7 +396,7 @@ def grade():
     fp.write("Score: " + str((score/12)*100) + "\n")
 ###SEQUENCE 5 OBJS###
 msg6 = visual.TextBox2(win,
-    text="Now you will be given 12 Chinese characters with mnemonic devices, no paper, and no time limit--though you will be timed. When you click continue, you will be brought to a screen to study and learn the characters. When you click next, you will be examined on them. Good luck!",
+    text="Now you will have 1 minute to memorize the English meaning of 12 different Chinese characters with mnemonic images to assist memorization followed by 30 seconds of rest and another exam prompting you to right the English meaning of each new Chinese character.",
     font="Open Sans", letterHeight=30,
     pos=(0, 200), size=(1000,800), alignment='center')
 ###SEQUENCE 6 OBJS###
@@ -723,7 +723,7 @@ def mgrade():
     fp.write("Score: " + str((score/12)*100) + "\n")
 ###SEQUENCE 0 OBJS###
 msg8 = visual.TextBox2(win,
-    text="And that's it! Thank you so much for participating!",
+    text="That is all! Please wait for the timer to run out.",
     font="Open Sans", letterHeight=30,
     pos=(0, 200), size=(1000,800), alignment='center')
 buttonMsg9 = visual.TextBox2(win,
@@ -734,7 +734,7 @@ buttonMsg9 = visual.TextBox2(win,
     
 ###OTHER OBJS###
 msg9 = visual.TextBox2(win,
-    text="Cool! Now wait for 30 seconds :)",
+    text="Now rest for 30 seconds.",
     font="Open Sans", letterHeight=30,
     pos=(0, 200), size=(1000,800), alignment='center')
 #while 'escape' not in keys:
