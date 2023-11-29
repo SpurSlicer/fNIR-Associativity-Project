@@ -73,7 +73,7 @@ buttonMsg2 = visual.TextBox2(win,
     borderColor='darkmagenta', anchor='center', alignment='center')
 ###SEQUENCE 2 OBJS###
 msg4 = visual.TextBox2(win,
-    text="Now you will have 1 minute to memorize the English meaning of 12 Chinese characters followed by 30 seconds of rest and a 1 minute exam prompting you to right the English meaning of each Chinese character.",
+    text="Now you will have 1 minute to memorize the English meaning of 12 Chinese characters followed by 30 seconds of rest and a 1 minute exam prompting you to write the English meaning of each Chinese character.",
     font="Open Sans", letterHeight=30,
     pos=(0, 200), size=(1000,800), alignment='center')
 ###SEQUENCE 3 OBJS###
@@ -396,7 +396,7 @@ def grade():
     fp.write("Score: " + str((score/12)*100) + "\n")
 ###SEQUENCE 5 OBJS###
 msg6 = visual.TextBox2(win,
-    text="Now you will have 1 minute to memorize the English meaning of 12 different Chinese characters with mnemonic images to assist memorization followed by 30 seconds of rest and another exam prompting you to right the English meaning of each new Chinese character.",
+    text="Now you will have 1 minute to memorize the English meaning of 12 different Chinese characters with mnemonic images to assist memorization followed by 30 seconds of rest and another exam prompting you to write the English meaning of each new Chinese character.",
     font="Open Sans", letterHeight=30,
     pos=(0, 200), size=(1000,800), alignment='center')
 ###SEQUENCE 6 OBJS###
@@ -723,7 +723,7 @@ def mgrade():
     fp.write("Score: " + str((score/12)*100) + "\n")
 ###SEQUENCE 0 OBJS###
 msg8 = visual.TextBox2(win,
-    text="That is all! Please wait for the timer to run out.",
+    text="Thank you for participating! Please wait for the timer to run out for the study to conclude.",
     font="Open Sans", letterHeight=30,
     pos=(0, 200), size=(1000,800), alignment='center')
 buttonMsg9 = visual.TextBox2(win,
@@ -902,6 +902,7 @@ while True:
             buttonMsg6.draw()
         else:
             timer.reset()
+            push
             break
 
     else:
