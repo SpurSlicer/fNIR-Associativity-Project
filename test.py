@@ -118,7 +118,7 @@ ic2 = visual.TextBox2(win,
     font="DFKai-SB", letterHeight=50,
     pos=(-450, 150), size=(110,110), alignment='center', color='black')
 ic3 = visual.TextBox2(win,
-    text="口",
+    text="花",
     font="DFKai-SB", letterHeight=50,
     pos=(-450, 50), size=(110,110), alignment='center', color='black')
 ic4 = visual.TextBox2(win,
@@ -142,7 +142,7 @@ ic8 = visual.TextBox2(win,
     font="DFKai-SB", letterHeight=50,
     pos=(0, 150), size=(110,110), alignment='center', color='black')
 ic9 = visual.TextBox2(win,
-    text="人",
+    text="海",
     font="DFKai-SB", letterHeight=50,
     pos=(0, 50), size=(110,110), alignment='center', color='black')
 ic10 = visual.TextBox2(win,
@@ -154,7 +154,7 @@ ic11 = visual.TextBox2(win,
     font="DFKai-SB", letterHeight=50,
     pos=(0, -150), size=(110,110), alignment='center', color='black')
 ic12 = visual.TextBox2(win,
-    text="川",
+    text="钱",
     font="DFKai-SB", letterHeight=50,
     pos=(0, -250), size=(110,110), alignment='center', color='black')
 tb1 = visual.TextBox2(win,
@@ -373,7 +373,7 @@ def grade():
         score += 1
     if (tb2.text.lower().__contains__("sun") or tb2.text.lower().__contains__("day")):
         score += 1
-    if (tb3.text.lower().__contains__("mouth")):
+    if (tb3.text.lower().__contains__("flower")):
         score += 1
     if (tb4.text.lower().__contains__("sit")):
         score += 1
@@ -385,13 +385,13 @@ def grade():
         score += 1
     if (tb8.text.lower().__contains__("fly")):
         score += 1
-    if (tb9.text.lower().__contains__("person")):
+    if (tb9.text.lower().__contains__("sea")) or (tb9.text.lower().__contains__("ocean")):
         score += 1
     if (tb10.text.lower().__contains__("eat")):
         score += 1
     if (tb11.text.lower().__contains__("sky")):
         score += 1
-    if (tb12.text.lower().__contains__("river")):
+    if (tb12.text.lower().__contains__("money")):
         score += 1
     fp.write("Score: " + str((score/12)*100) + "\n")
 ###SEQUENCE 5 OBJS###
