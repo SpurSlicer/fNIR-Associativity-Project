@@ -747,7 +747,7 @@ while True:
             screen_number -= 1
     if 'right' in keys:
         screen_number += 1
-    if 'escape' in keys:
+    if 'f1' in keys:
         break
     keys.clear()
 #Screens
