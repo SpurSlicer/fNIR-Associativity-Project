@@ -737,16 +737,16 @@ msg9 = visual.TextBox2(win,
     text="Now rest for 30 seconds.",
     font="Open Sans", letterHeight=30,
     pos=(0, 200), size=(1000,800), alignment='center')
-#while 'escape' not in keys:
 while True:
 #General objects
     win.clearBuffer()
     keys = kb.getKeys()
-    if (screen_number > 0):
-        if 'left' in keys:
-            screen_number -= 1
-    if 'right' in keys:
-        screen_number += 1
+    ### Uncomment below to traverse screens with arrow keys ###
+    #if (screen_number > 0):
+    #    if 'left' in keys:
+    #        screen_number -= 1
+    #if 'right' in keys:
+    #    screen_number += 1
     if 'f1' in keys:
         break
     keys.clear()
