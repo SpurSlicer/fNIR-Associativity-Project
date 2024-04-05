@@ -742,11 +742,11 @@ while True:
     win.clearBuffer()
     keys = kb.getKeys()
     ### Uncomment below to traverse screens with arrow keys ###
-    #if (screen_number > 0):
-    #    if 'left' in keys:
-    #        screen_number -= 1
-    #if 'right' in keys:
-    #    screen_number += 1
+    if (screen_number > 0):
+        if 'left' in keys:
+            screen_number -= 1
+    if 'right' in keys:
+        screen_number += 1
     if 'f1' in keys:
         break
     keys.clear()
